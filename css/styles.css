@@ -103,6 +103,11 @@ html, body {
     border-radius: 10px;
 }
 
+.servicios div div a:hover {
+    background-color: blue;
+    color: white;
+}
+
 .servicios div div h3 {
     margin-bottom: 20px;
     font-size: 20px;
@@ -135,6 +140,18 @@ html, body {
     margin-bottom: 20px;
     margin-right: 45%;
 }
+
+.botonera:hover {
+    background-color: blue;
+    color: white;
+}
+
+.buttonSubmit:hover {
+    background-color: blue;
+    color: white;
+}
+
+
 
 .formulario {
     border-radius: 10px;
@@ -172,11 +189,21 @@ html, body {
     height: 545px;
 }
 
+.maps:hover {
+    transform: scale(1.25);
+}
+
 .fotos div img {
     height: 20em;
     width: 20em;
     margin: 10px;
     object-fit: cover;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.fotos div img:hover {
+	transform: scale(1.3);
 }
 
 .fotos {
