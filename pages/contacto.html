@@ -2,92 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <title>Contacto</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <title>Contacto</title>
 </head>
 
 <body>
-    <!--Logo y navegación-->
-    <header class="header">
-        <img src="../img/logo.png">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="title_center">CONTACTO</h1>
-    <div class="formularioFlex">
-        <div class="formulario">
-            Para pedir cita, rellena el siguiente formulario:
-            <br>
-            <br>
-            <!--Inicio formulario-->
-            <form>
-                <div>
-                    <label>Nombre</label>
-                    <input type="text" required />
-                </div>
-                <br>
-                <div>
-                    <label>Número de teléfono</label>
-                    <input type="number" required />
-                </div>
-                <br>
-                <div>
-                    <label>Correo electrónico</label>
-                    <input type="email" required />
-                </div>
-                <br>
-                <div>
-                    <label>Género</label>
-                    <select>
-                        <option>Mujer</option>
-                        <option>Hombre</option>
-                    </select>
-                </div>
-                <br>
-                <div>
-                    <label>Preferencia de fecha</label>
-                    <input type="date" required />
-                </div>
-                <br>
-                <div>
-                    <label>Servicio</label>
-                    <select>
-                        <option>Corte de pelo</option>
-                        <option>Teñir pelo</option>
-                        <option>Afeitado</option>
-                        <option>Extensiones</option>
-                    </select>
-                </div>
-                <br>
-                <button class="buttonSubmit" type="submit">Enviar</button>
-            </form>
+  <!--Logo y navegación-->
+  <header class="header">
+    <img src="../img/logo.png">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
         </div>
-        <iframe class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11931.024101465748!2d0.6172547!3d41.6177872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfff152b83abe45bf!2sFina%20Guiseris%20Salon%20Emotion!5e0!3m2!1ses!2ses!4v1657814773874!5m2!1ses!2ses"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </nav>
+  </header>
+  <h1 class="title_center">CONTACTO</h1>
+  <div class="container">
+    <div class="row">
+      <div class="formulario col-md-6 col-xl-6 col-sm-6 col-lg-6 col-xs-12">
+        Para pedir cita, rellena el siguiente formulario:
+        <br>
+        <br>
+        <!--Inicio formulario-->
+        <form>
+          <div class="mb-2">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Número de teléfono</label>
+            <input type="number" class="form-control">
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico a terceros</div>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Género</label>
+            <select class="form-control">
+              <option>Mujer</option>
+              <option>Hombre</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Preferencia de fecha</label>
+            <input type="date" class="form-control" required />
+          </div>
+          <div class="mb-2">
+            <label class="form-label">Servicio</label>
+            <select class="form-control">
+              <option>Corte de pelo</option>
+              <option>Teñir pelo</option>
+              <option>Afeitado</option>
+              <option>Extensiones</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <iframe class="maps col-md-6 col-xl-6 col-sm-6 col-lg-6 col-xs-12"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11931.024101465748!2d0.6172547!3d41.6177872!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfff152b83abe45bf!2sFina%20Guiseris%20Salon%20Emotion!5e0!3m2!1ses!2ses!4v1657814773874!5m2!1ses!2ses"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-    <!-- inicio de footer -->
-    <footer class="footer">
-        <img src="../img/logo.png">
-        <p>2022, eHAIRDRESSING</p>
-        <div>
-            <a href="http://www.facebook.com"><img src="../img/facebook.png" /></a>
-            <a href="http://www.instagram.com"><img src="../img/instagram.png" /></a>
-            <a href="http://www.twitter.com"><img src="../img/twitter.png" /></a>
-        </div>
-    </footer>
+  </div>
+
+  <!-- inicio de footer -->
+  <footer class="footer">
+    <img src="../img/logo.png">
+    <p>2022, eHAIRDRESSING</p>
+    <div>
+      <a href="http://www.facebook.com"><img src="../img/facebook.png" /></a>
+      <a href="http://www.instagram.com"><img src="../img/instagram.png" /></a>
+      <a href="http://www.twitter.com"><img src="../img/twitter.png" /></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>

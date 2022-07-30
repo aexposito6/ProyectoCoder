@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-html, body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
 .header {
     background-color: #AFE1AF;
     padding: 20px;
@@ -20,15 +15,6 @@ html, body {
 .header img {
     height: 100px;
     width: 100px;
-}
-
-.header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.header nav ul li {
-    margin: 20px;
 }
 
 .header nav ul li a:hover {
@@ -67,31 +53,26 @@ html, body {
 }
 
 .servicios div div img {
-    height: 300px;
-    width: 300px;
     border-radius: 20px 20px;
+    height: 100%;
 }
 
 .servicios > div {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
-.servicios div div {
-    height: 400px;
-    width: 300px;
+.cardcss {
     border: 1px solid;
     margin-bottom: 15px;
     text-align: center;
     border-radius: 20px;
-    background-color: #dceddc;
     margin-right: 10px;
     transition: 3s;
 }
 
-.servicios div div:hover {
+.cardcss:hover {
     transform: scale(1.25);
 }
 
@@ -156,15 +137,12 @@ html, body {
 .formulario {
     border-radius: 10px;
     background-color: #dceddc;
-    height: 525px;
+    height: 100%;
     width: 350px;
     border: 1px solid;
     padding: 10px;
     margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    margin-left: 200px;
 }
 
 
@@ -220,22 +198,6 @@ html, body {
     grid-template-rows: 1fr;
 }
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-.textOver {
-    position: absolute;
-    margin-bottom:420px;
-    font-size: 40px;
-    color: #e7f0e7;
-}
-
 .formularioFlex {
     display: flex;
     justify-content: center;
@@ -285,16 +247,6 @@ html, body {
 
 }
 
-@media screen and (min-width: 714px) {
-    .maps {
-        margin-right: 5px;
-    }
-
-    .formulario {
-        margin-left: 5px;
-    }
-}
-
 @media screen and (max-width: 714px) {
     .fotos div {
         grid-template-columns: repeat(2, 1fr);
@@ -309,10 +261,6 @@ html, body {
     .fotos {
         height: auto;
         justify-content: space-around;
-    }
-
-    .container {
-        align-items: flex-start;
     }
 
     .formularioFlex {
