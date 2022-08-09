@@ -1,0 +1,53 @@
+@import "../base/variables";
+
+.servicios {
+    & > div {
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            a{
+                text-decoration: none;
+                background-color: $color-azul-claro;
+                padding: 7px;
+                color: black;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: $color-azul-fuerte;
+                    color: $color-blanco;
+                }
+            }
+
+            img {
+                border-radius: 20px 20px;
+                height: 100%;
+            }
+
+            h3 {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.servicios__texto {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cardcss {
+    border: 1px solid;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: 3s;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}

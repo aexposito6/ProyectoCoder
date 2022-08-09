@@ -1,0 +1,27 @@
+@import "../base/variables";
+
+.footer {
+    background-color: $color-verde;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    div {
+        a {
+            margin: 5px;
+        }
+    }
+
+    a {
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
