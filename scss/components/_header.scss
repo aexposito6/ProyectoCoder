@@ -15,7 +15,7 @@
         ul {
             li {
                 a:hover{
-                    color: $color-negro;
+                    color: map-get($map: $colours, $key: "color-negro");;
                     text-decoration: overline;
                 }
             }

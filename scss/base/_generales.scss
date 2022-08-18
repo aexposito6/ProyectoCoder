@@ -9,6 +9,11 @@
     font-size: 40px;
 }
 
+.texto_paragrafo {
+    margin: 20px;
+    text-align: justify;
+}
+
 .flex {
     display: flex;
 }
@@ -17,4 +22,10 @@
     @extend .flex;
     justify-content: $justify-content;
     align-items: $align-items;
+}
+
+@mixin setGrid($columns, $rows) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
 }
