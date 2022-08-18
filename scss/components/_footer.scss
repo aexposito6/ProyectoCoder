@@ -1,11 +1,10 @@
 @import "../base/variables";
+@import "../base/generales";
 
 .footer {
-    background-color: $color-verde;
+    background-color: map-get($map: $colours, $key: "color-verde");
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include setFlex(space-between, center);
 
     img {
         height: 100px;

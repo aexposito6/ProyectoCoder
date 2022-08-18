@@ -8,3 +8,13 @@
     text-align: center;
     font-size: 40px;
 }
+
+.flex {
+    display: flex;
+}
+
+@mixin setFlex($justify-content, $align-items) {
+    @extend .flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

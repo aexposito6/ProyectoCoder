@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/generales";
 
 .servicios {
     & > div {
@@ -9,14 +10,14 @@
         div {
             a{
                 text-decoration: none;
-                background-color: $color-azul-claro;
+                background-color: map-get($map: $colours, $key: "color-azul-claro");
                 padding: 7px;
-                color: black;
+                color: map-get($map: $colours, $key: "color-negro");;
                 border-radius: 10px;
 
                 &:hover {
-                    background-color: $color-azul-fuerte;
-                    color: $color-blanco;
+                    background-color: map-get($map: $colours, $key: "color-azul-fuerte");
+                    color: map-get($map: $colours, $key: "color-blanco"); 
                 }
             }
 

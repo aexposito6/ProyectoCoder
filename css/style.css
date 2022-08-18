@@ -7,10 +7,24 @@
   text-align: center;
   font-size: 40px; }
 
+.flex, .footer, .header {
+  display: flex; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.title_center {
+  text-align: center;
+  font-size: 40px; }
+
+.flex, .footer, .header {
+  display: flex; }
+
 .footer {
   background-color: #AFE1AF;
   padding: 20px;
-  display: flex;
   justify-content: space-between;
   align-items: center; }
   .footer img {
@@ -22,10 +36,21 @@
     height: 50px;
     width: 50px; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.title_center {
+  text-align: center;
+  font-size: 40px; }
+
+.flex, .footer, .header {
+  display: flex; }
+
 .header {
   background-color: #AFE1AF;
   padding: 20px;
-  display: flex;
   justify-content: space-between;
   align-items: center; }
   .header img {
@@ -35,6 +60,18 @@
     color: #000000;
     text-decoration: overline; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.title_center {
+  text-align: center;
+  font-size: 40px; }
+
+.flex, .footer, .header {
+  display: flex; }
+
 .servicios > div {
   text-align: center;
   display: flex;
@@ -43,11 +80,11 @@
     text-decoration: none;
     background-color: lightblue;
     padding: 7px;
-    color: black;
+    color: "#000000";
     border-radius: 10px; }
     .servicios > div div a:hover {
-      background-color: blue;
-      color: white; }
+      background-color: "blue";
+      color: "white"; }
   .servicios > div div img {
     border-radius: 20px 20px;
     height: 100%; }
