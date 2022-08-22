@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -226,3 +227,63 @@
   display: block;
   height: 750px;
   width: auto; }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 1319px */
+@media screen and (max-width: 1319px) {
+  .fotos {
+    margin-top: 70px;
+    margin-bottom: 70px; }
+  .fotos div img {
+    width: 15em; }
+  .maps {
+    height: 368px; }
+  .formulario {
+    height: 350px; }
+  .botonera {
+    width: 186px; } }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 990px */
+@media screen and (max-width: 990px) {
+  .fotos div img {
+    height: 12em;
+    width: 12em; } }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 845px */
+@media screen and (max-width: 845px) {
+  .fotos div img {
+    height: 10em;
+    width: 10em; } }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 714. Las fotos pasan a ser en columnas de 2 imágenes */
+@media screen and (max-width: 714px) {
+  .fotos div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr; }
+  .fotos div img {
+    height: 12em;
+    width: 12em; }
+  .fotos {
+    height: auto;
+    justify-content: space-around; }
+  .formularioFlex {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 150px; }
+  .maps {
+    margin-right: 60px;
+    width: 362px; } }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 570px */
+@media screen and (max-width: 570px) {
+  .header nav ul {
+    flex-direction: column; }
+  .imgCenter {
+    width: 250px; } }
+
+/* Se hace responsive la pantalla cuando tiene un ancho máximo de 433px. En cada fila solo habrá una imagen */
+@media screen and (max-width: 433px) {
+  .fotos div {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr; }
+  .botonera {
+    margin-left: 30%; } }
