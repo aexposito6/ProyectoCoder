@@ -96,9 +96,14 @@
 @media screen and (max-width: 570px) {
     .header {
         nav {
-            ul {
-                flex-direction: column;
+            div {
+                div {
+                    ul {
+                        flex-direction: column;
+                    }
+                }
             }
+            
         }
     }
 
