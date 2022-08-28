@@ -236,9 +236,9 @@
   .fotos div img {
     width: 15em; }
   .maps {
-    height: 368px; }
+    height: 265px; }
   .formulario {
-    height: 350px; }
+    height: 596px; }
   .botonera {
     width: 186px; } }
 
@@ -246,7 +246,9 @@
 @media screen and (max-width: 990px) {
   .fotos div img {
     height: 12em;
-    width: 12em; } }
+    width: 12em; }
+  .imgCenter {
+    width: 532px; } }
 
 /* Se hace responsive la pantalla cuando tiene un ancho máximo de 845px */
 @media screen and (max-width: 845px) {
@@ -275,13 +277,28 @@
 
 /* Se hace responsive la pantalla cuando tiene un ancho máximo de 570px */
 @media screen and (max-width: 570px) {
-  .header nav ul {
-    flex-direction: column; }
+  .title_center {
+    margin-left: 70px; }
+  .formulario {
+    margin-left: 126px; }
+  .maps {
+    margin: 106px; }
+  .header {
+    width: 549px; }
+    .header nav div div ul {
+      flex-direction: column; }
   .imgCenter {
-    width: 250px; } }
+    width: 250px; }
+  .footer {
+    width: 540px; }
+  .servicios > div {
+    flex-direction: column;
+    align-items: center; } }
 
 /* Se hace responsive la pantalla cuando tiene un ancho máximo de 433px. En cada fila solo habrá una imagen */
 @media screen and (max-width: 433px) {
+  .title_center {
+    margin-left: 175px; }
   .fotos div {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr; }
